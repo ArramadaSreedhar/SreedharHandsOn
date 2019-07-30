@@ -20,6 +20,7 @@ public class OptionalExamp {
 
 		Emp e1=new Emp(101,"Sree",0);
 		
+		
 		//Before using optional
 		Emp	e6=new OptionalExamp().check(e1);
 		System.out.println(e6);
