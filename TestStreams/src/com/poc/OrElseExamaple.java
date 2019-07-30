@@ -33,7 +33,7 @@ public class OrElseExamaple {
 		/*
 		 * OFNULL
 		 */
-		//Optional of call the both methods, regardless Optional is present or not. It's expensive.
+		//Optional.of call the both methods, regardless Optional is present or not. It's expensive.
 		System.out.println(Optional.of(A()).orElse(B()));
 		
 		//Only Optional is not present then only B() will call. 
