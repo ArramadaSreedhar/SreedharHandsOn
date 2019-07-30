@@ -1,4 +1,4 @@
-package com.poc;
+package com.poc.dayTwo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,7 +42,6 @@ public class OrElseExamaple {
 		/*
 		 * OF NULLABLE
 		 */
-		
 		//Here getVal method return null value, then only orElse returns object.
 		Emp empOpt=Optional.ofNullable(new OrElseExamaple().getVal(1)).orElse(new Emp(2,"Sreekanth"));
 		System.out.println(empOpt.getName());
