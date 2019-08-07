@@ -1,0 +1,21 @@
+		Emp e0=new Emp(1, "Amar");
+		Emp e1=new Emp(2, "Amar");
+		Emp e2=new Emp(2, "krishna");
+		Emp e3=new Emp(3, "Badri");
+		List<Emp> alemp=new ArrayList<>();
+		alemp.add(e0);alemp.add(e1);alemp.add(e2);alemp.add(e3);
+		alemp.stream().forEach(x->System.out.println(x.getName()));
+		System.out.println("After Sorting");
+		//alemp.sort((a,b)->a.getName().compareTo(b.getName()));
+		alemp.sort(Comparator.comparing(Emp::getName).thenComparing(Emp::getId));
+	/*	Collections.sort(alemp,new Comparator<Emp>() {
+
+			@Override
+			public int compare(Emp o1, Emp o2) {
+				// TODO Auto-generated method stub
+				return o1.getName().compareTo(o2.getName());
+			}
+			
+		});*/
+		
+		alemp.stream().forEach(x->System.out.println(x.getName()+"---"+x.getId()));
